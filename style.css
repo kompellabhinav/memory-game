@@ -1,0 +1,362 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: slategrey;
+  color: white;
+  text-align: center;
+  background-image: url("https://cdn.glitch.global/70f70f80-216b-4ac4-8804-3577d132fd8a/road.jpg?v=1650301662078");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: verdana, arial, sans-serif;
+  color: #dedcdc;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.main-heading {
+  color: #383A3B;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.game-introduction {
+  font-size: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.game-description {
+  color: #646769;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.start-description {
+  color: #202121;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#gameButtonArea > button {
+  width: 150px;
+  height: 150px;
+  margin: 2px;
+  align-content: center;
+}
+
+/* Game button options */
+#button1 {
+  background-color: lightgreen;
+}
+
+#button1:active,
+#button1.lit {
+  background-color: green;
+}
+
+#button2 {
+  background-color: #8084e6;
+}
+
+#button2:active,
+#button2.lit {
+  background-color: blue;
+}
+
+#button3 {
+  background-color: #fa9389;
+}
+
+#button3:active,
+#button3.lit {
+  background-color: red;
+}
+
+#button4 {
+  background-color: lightyellow;
+}
+
+#button4:active,
+#button4.lit {
+  background-color: yellow;
+}
+
+#button5 {
+  background-color: #ffd698;
+}
+
+#button5:active,
+#button5.lit {
+  background-color: orange;
+}
+
+#button6 {
+  background-color: #f4b7fa;
+}
+
+#button6:active,
+#button6.lit {
+  background-color: purple;
+}
+
+#button7 {
+  background-color: pink;
+}
+
+#button7:active,
+#button7.lit {
+  background-color: #fa0092;
+}
+
+#button8 {
+  background-color: #b7f5fa;
+}
+
+#button8:active,
+#button8.lit {
+  background-color: #01e6fa;
+}
+
+/* Difficulty buttons editing */
+
+#userInput {
+  height: 36px;
+  margin: 10px 10px 20px 0px;
+}
+
+h2 {
+  color: #3d3d3d;
+  margin-bottom: 10px;
+}
+
+output {
+  font-size: 20px;
+}
+
+.submitButton {
+  margin: 10px 0px 0px;
+}
+
+/* Hide Buttons */
+
+.hide {
+  visibility: hidden;
+}
+
+/* Strikes when answered wrong */
+#strikes {
+  font-size: 2.5rem;
+  display: inline;
+}
+
+/* input {
+  float: left;
+} */
+
+table {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.output-color {
+  color: #353438;
+}
+
+/* RANGE SLIDER PROPERTIES */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 10px;
+  width: 75%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: #3e3d42;
+  border-radius: 1px;
+  border: 0px solid #000000;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #000000;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #000000;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #3e3d42;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: #3e3d42;
+  border-radius: 1px;
+  border: 0px solid #000000;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #000000;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #000000;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #636363;
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #636363;
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #000000;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #000000;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #636363;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #636363;
+}
+
+/* CSS Button */
+/* Submit Button */
+
+.button-game {
+  background-color: lightgreen;
+  text-align: center;
+  padding: 5px;
+  font-size: 2rem;
+  outline: none;
+  border: 0px;
+}
+
+.button-game:hover {
+  background-color: #266e02;
+  border: 10px;
+}
+
+.button-game:active {
+  background-color: green;
+}
+
+/* Reset Button */
+
+.button-reset {
+  background-color: lightblue;
+  text-align: center;
+  padding: 5px;
+  font-size: 2rem;
+  outline: none;
+  border: 0px;
+}
+
+.button-reset:hover {
+  background-color: #0006ba;
+  border: 10px;
+}
+
+.button-reset:active {
+  background-color: blue;
+}
+
+/* Start Button */
+
+.button-start {
+  background-color: #dad8e3;
+  text-align: center;
+  padding: 5px;
+  font-size: 2rem;
+  outline: none;
+  border: 0px;
+}
+
+.button-start:hover {
+  background-color: #67666b;
+  border: 10px;
+}
+
+.button-start:active {
+  background-color: #4e4e52;
+}
+
+/* Stop Button */
+
+.button-stop {
+  background-color: #f00a02;
+  text-align: center;
+  padding: 5px;
+  font-size: 2rem;
+  outline: none;
+  border: 0px;
+}
+
+.button-stop:hover {
+  background-color: #c90902;
+  border: 10px;
+}
+
+.button-stop:active {
+  background-color: #6b0501;
+}
+
+.clock-style {
+  font-size: 4rem;
+  color: #383A3B;
+  display: inline;
+  text-align: right;
+}

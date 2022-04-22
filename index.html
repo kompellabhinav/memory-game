@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Memory Game!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1 class="main-heading">Memory Game</h1>
+    <p class="game-introduction">
+      Welcome to the light and sound memory game.<br />Guess the right pattern
+      to win.
+    </p>
+    
+    <p class="game-description">
+      Start by selecting your game options and click ✔️
+    </p>
+
+    <div class="difficultyButtons">
+      <h2>GAME OPTIONS</h2>
+
+      <table>
+        <tr>
+          <th>
+            <output
+              class="output-color"
+              title="Select how long you want the pattern to be"
+              >Length<br
+            /></output>
+            <input
+              id="rangeSlider"
+              type="range"
+              value="8"
+              min="6"
+              max="12"
+              oninput="num.value = this.value"
+            />
+            <br />
+            <output class="output-color" id="num">8</output>
+          </th>
+
+          <th>
+            <output
+              class="output-color"
+              title="Select the number of buttons you want in the game"
+              >Boxes<br
+            /></output>
+            <input
+              class="styled-slider slider-progress"
+              id="buttonSlider"
+              type="range"
+              value="4"
+              min="3"
+              max="8"
+              oninput="buttons.value = this.value"
+            />
+            <br />
+            <output class="output-color" id="buttons">4</output>
+          </th>
+          <th>
+            <output
+              class="output-color"
+              title="Set the speed to match your desired difficulty level"
+              >Speed<br
+            /></output>
+            <input
+              id="difficultySlider"
+              type="range"
+              value="1"
+              min="1"
+              max="3"
+              oninput="difficulty.value = this.value"
+            />
+            <br />
+            <output class="output-color">x</output>
+            <output class="output-color" id="difficulty">1</output>
+          </th>
+        </tr>
+      </table>
+
+      <br />
+      <button
+        class="submitButton button-game"
+        onclick="patternSize(num); hideButton(buttons); gameSpeed(difficulty)"
+        title="Submit"
+      >
+        ✔️
+      </button>
+      <button
+        class="button-reset"
+        type="reset"
+        onclick="document.location.reload()"
+        title="Reset"
+      >
+        🔁
+      </button>
+    </div>
+
+    <h2 class="start-description">Click 🏁 to begin and 🛑 to pause</h2>
+
+    <button
+      class="button-start"
+      id="startBtn"
+      onclick="startGame(); document.getElementById('gameButtonArea').scrollIntoView();"
+      title="Start"
+    >
+      🏁
+    </button>
+    <button
+      id="stopBtn"
+      class="hidden button-stop"
+      onclick="stopGame()"
+      title="Stop"
+    >
+      🛑
+    </button>
+
+    <table>
+      <tr>
+        <th>
+          <p id="strikes">🖤🖤🖤</p>
+        </th>
+
+        <th>
+          <h1 class="clock countDown clock-style"></h1>
+        </th>
+      </tr>
+    </table>
+
+    <div id="gameButtonArea">
+      <button
+        id="button1"
+        onclick="guess(1)"
+        onmousedown="startTone(1)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="button2"
+        onclick="guess(2)"
+        onmousedown="startTone(2)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="button3"
+        onclick="guess(3)"
+        onmousedown="startTone(3)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="button4"
+        onclick="guess(4)"
+        onmousedown="startTone(4)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="button5"
+        onclick="guess(5)"
+        onmousedown="startTone(5)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="button6"
+        onclick="guess(6)"
+        onmousedown="startTone(6)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="button7"
+        onclick="guess(7)"
+        onmousedown="startTone(7)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="button8"
+        onclick="guess(8)"
+        onmousedown="startTone(8)"
+        onmouseup="stopTone()"
+      ></button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </body>
+</html>
