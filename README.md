@@ -4,9 +4,9 @@
 
 Submitted by: **Abhinav Kompella**
 
-Time spent: **14** hours spent in total
+Time spent: **15** hours spent in total
 
-Link to project: (insert your link here, should start with https://glitch.com...)
+Link to project: (https://glitch.com/edit/#!/typhoon-balanced-viper)
 
 ## Required Functionality
 
@@ -44,10 +44,10 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-![](http://g.recordit.co/hEJUN59P8f.gif)
-![](http://g.recordit.co/LmLJ2V8KOH.gif)
-![](http://g.recordit.co/zQhkOrCVcL.gif)
-![](http://g.recordit.co/E2ziRhm6P7.gif)
+![](https://user-images.githubusercontent.com/101344801/164755379-c3611811-7f6b-4bae-9a0b-91f49467e968.gif)
+![](https://user-images.githubusercontent.com/101344801/164755978-4ec5a296-aa58-4391-98d9-0b86fabe0533.gif)
+![](https://user-images.githubusercontent.com/101344801/164757023-d4f61d3b-bb4a-4393-8391-f7f48728b66d.gif)
+![](https://user-images.githubusercontent.com/101344801/164759653-d6ba0e99-2069-4dca-96cb-33d3a607a53d.gif)
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
@@ -85,7 +85,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## License
 
-    Copyright [YOUR NAME]
+    Copyright [ABHINAV KOMPELLA]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
